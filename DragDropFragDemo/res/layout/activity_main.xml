@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+     <include layout="@layout/title_bar"
+         android:layout_weight="1"/>   
+	<!--  <Button
+	    android:id="@+id/open_bt"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="开启蓝牙"/>-->
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="horizontal" 
+    android:layout_weight="4">
+    <fragment 
+        android:id="@+id/palette" 
+        android:layout_width="0px" 
+        android:layout_height="match_parent" 
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1" 
+        class="com.androidbook.drag.drop.demo.Palette"/>
+    <fragment android:id="@+id/dropzone" 
+        android:layout_width="0px" 
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2" 
+        class="com.androidbook.drag.drop.demo.DropZone"/>
+</LinearLayout>
+ <include layout="@layout/bottom_bar"
+     android:layout_weight="1"/>
+</LinearLayout>
+<!--
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title_bar" >
+
+        <ImageButton
+            android:id="@+id/id_iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/recent_chat_showright_normal"
+            android:onClick="showLeftMenu" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        
+            <ImageButton
+            android:id="@+id/id_iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+             android:onClick="showRightMenu"
+            android:background="@drawable/showright_selector" />
+       
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/mybutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:text="开启蓝牙" />
+
+    <Button
+        android:id="@+id/mybutton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mybutton1"
+        android:text="搜索蓝牙" />
+
+    <otherElement.WiperSwitch
+        android:id="@+id/wiperSwitch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mybutton2" />
+-->
+
